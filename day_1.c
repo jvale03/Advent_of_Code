@@ -66,7 +66,7 @@ int parsing_part_2(FILE *file)
 int main()
 {
     FILE *file=fopen("input.txt","r");
-    printf("O valor mais alto é %d.\n",parsing_part_1(file));
+    printf("The highest value is %d.\n",parsing_part_1(file));
     rewind(file);
-    printf("A soma dos 3 valores mais altos é %d.\n",parsing_part_2(file));
+    printf("The sum of the 3 highests values is %d.\n",parsing_part_2(file));
 }

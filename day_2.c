@@ -78,15 +78,14 @@ int part_2(FILE *file)
             else if(strcmp(token_elf,"B")==0) points+=3;
             else if(strcmp(token_elf,"C")==0) points+=1;
         }
-        printf("%s %s -> %d\n",token_elf,token_me,points);
     }
     return points;
 }
 
 int main()
 {
-    FILE *file=fopen("input.txt","r");
-    printf("O total de pontos foi %d.\n",part_1(file));
+    FILE *file=fopen(".gitignore/input.txt","r");
+    printf("Total %d.\n",part_1(file));
     rewind(file);
-    printf("O total de pontos foi %d.\n",part_2(file));
+    printf("Total %d.\n",part_2(file));
 }
